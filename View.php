@@ -13,7 +13,7 @@
       <ul>
         <li><a href = "Home.php"> Home </a></li>
         <li><a href = "About.php"> About </a></li>
-        <li><a href = "View.php" >view</a></li>
+        <li><a href = "View.php" >View</a></li>
       </ul>
 
         <div class = "time">
