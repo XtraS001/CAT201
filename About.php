@@ -97,7 +97,7 @@ html {
       <div class="information">
         <h2>Chin Xu Sheng</h2>
         <p class="Job">Designer</p>
-        <p class = "Matric">12345</p>
+        <p class = "Matric">148019</p>
       </div>
     </div>
   </div>
