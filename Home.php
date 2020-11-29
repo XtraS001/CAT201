@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang ="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
@@ -21,8 +21,8 @@
         </div>
 
     </div>
-    <div id = "coffee">
-        <img src = "mario.gif" class = "pro_pic" alt ="">
+    <div id = "mario">
+        <img src = "mario.gif" class = "mario" alt ="">
         <div class = "notification">
         <center><h1> Welcome to 201 NOTES</h1></center>
         <center><p><h3>Click on the "Add Note" button to add your note</h3></p></center>
@@ -32,12 +32,12 @@
     <div id = "addNote" class="openAdding">
       <mark><center><p><h3>Notice: The same title cannot be saved</h3></p></center>
       <center><p><h3>Please check the title in the View page</h3></p></center>
-      <center><p><h3>storage is a reserved title</h3></p></center></mark>
+      <center><p><h3>'storage' is a reserved title</h3></p></center></mark>
       <button class = "extraButton" type = "button" onclick = "closeNOTES()"> X </button>
       <form class = "notepad" action="note.php" method = "post">
         <h2>Notes</h2>
          <div class="keyin">
-           <input type="text" name="title"  autocomplete="off" required>
+           <input type="text" name="title"  autocomplete="on" required>
            <label >Title</label>
          </div>
 
@@ -47,7 +47,7 @@
          </div>
          <div>
            <button type ="submit" class = "closeButton"> Save </button>
-           <button type = "reset" class = "closeButton" onclick = "closeNOTES()"> Cancel </button>
+           <button type = "reset" class = "closeButton"> Clear</button>
          </div>
        </form>
     </div>
@@ -133,10 +133,10 @@
     font-size: 30px;
   }
 
-  #coffee{
+  #mario{
     text-align:right;
   }
-  #coffee .pro_pic{
+  #mario .mario{
     position:relative;
     transform: translate(0%,60%);
     opacity: 0.8;
@@ -145,7 +145,7 @@
     width: 250px;
   }
 
-  #coffee .notification{
+  #mario .notification{
     font-family:Courier, monospace;
     font-size: 30px;
     color:#15616d;
