@@ -25,12 +25,14 @@
         <img src = "mario.gif" class = "pro_pic" alt ="">
         <div class = "notification">
         <center><h1> Welcome to 201 NOTES</h1></center>
-        <center><p><h3>The same title cannot be saved</h3></p></center>
-        <center><p><h3>Please check the title in the View page</h3></p></center>
+        <center><p><h3>Click on the "Add Note" button to add your note</h3></p></center>
         </div>
     </div>
     <button class = "openButton" type = "button" onclick = "openNOTES()"> Add Note </button>
     <div id = "addNote" class="openAdding">
+      <mark><center><p><h3>Notice: The same title cannot be saved</h3></p></center>
+      <center><p><h3>Please check the title in the View page</h3></p></center>
+      <center><p><h3>storage is a reserved title</h3></p></center></mark>
       <button class = "extraButton" type = "button" onclick = "closeNOTES()"> X </button>
       <form class = "notepad" action="note.php" method = "post">
         <h2>Notes</h2>
@@ -39,7 +41,7 @@
            <label >Title</label>
          </div>
 
-         <div class="con">
+          <div class="con">
            <textarea type="text" name="note" value = "note" placeholder="Write something.." autocomplete="off" required></textarea>
            <label>Note</label>
          </div>
@@ -146,8 +148,8 @@
   #coffee .notification{
     font-family:Courier, monospace;
     font-size: 30px;
-    color:#800000;
-    transform: translate(0%,-10%);
+    color:#15616d;
+    transform: translate(0%,-50%);
   }
 
   /* design the form  */
@@ -155,11 +157,18 @@
   {
     display: none;
   }
+  .openAdding h3
+  {
+    font-family:Courier, monospace;
+    font-size: 25px;
 
+    color:#800000;
+    transform: translate(0%,-300%);
+  }
   .notepad{
     position: relative;
     left: 50%;
-    transform: translate(-50%,-30%);
+    transform: translate(-50%,-10%);
     width: 70%;
     padding: 20px;
     margin:0;
@@ -263,8 +272,8 @@
   }
   .openButton[type = "button"]
   {
-    position: relative;
-    transform: translate(200%,-300%);
+    position: absolute;
+    transform: translate(50%,-10%);
     background: transparent;
     border: none;
     outline: none;
@@ -277,7 +286,7 @@
   .extraButton[type = "button"]
   {
     position: relative;
-    transform: translate(400%,-400%);
+    transform: translate(200%,-300%);
     background: transparent;
     border: none;
     outline: none;
